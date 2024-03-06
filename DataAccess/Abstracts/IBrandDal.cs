@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Entities.Concretes;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -9,4 +10,6 @@ namespace DataAccess.Abstacts;
 public interface IBrandDal
 {
     void Add(Brand brand);
+
+    List<Brand> GetAll();
 }
